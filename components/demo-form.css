@@ -1,0 +1,250 @@
+.df-card {
+  width: 100%;
+  padding: 32px;
+  border: 1px solid #e4e8f1;
+  border-radius: 22px;
+  background: #fff;
+  color: #162441;
+  box-shadow: 0 20px 60px #080f2c14;
+  text-align: left;
+}
+
+.df-form-heading {
+  margin-bottom: 25px;
+}
+.df-form-heading h3 {
+  margin: 0 0 7px;
+  font-size: 22px;
+  font-weight: 750;
+  letter-spacing: -0.6px;
+}
+.df-form-heading p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #68738a;
+}
+.df-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 16px;
+}
+.df-field {
+  min-width: 0;
+}
+.df-full {
+  grid-column: 1 / -1;
+}
+.df-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+.df-field label > span:not(.df-optional) {
+  color: #5868ca;
+}
+.df-optional {
+  color: #7c8599;
+  font-weight: 400;
+}
+.df-field input,
+.df-field select,
+.df-field textarea {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  border: 1px solid #e0e5ef;
+  border-radius: 8px;
+  background: #fcfdff;
+  color: #162441;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.6;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.df-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+.df-field input::placeholder,
+.df-field textarea::placeholder {
+  color: #8a93a6;
+  opacity: 1;
+}
+.df-field select:has(option:checked[value=""]) {
+  color: #7c8599;
+}
+.df-field select option {
+  color: #162441;
+}
+.df-field input:hover,
+.df-field select:hover,
+.df-field textarea:hover {
+  border-color: #bbc5dd;
+}
+.df-field input:focus-visible,
+.df-field select:focus-visible,
+.df-field textarea:focus-visible {
+  outline: 2px solid #465bea;
+  outline-offset: 2px;
+  border-color: #7d8cf0;
+}
+.df-field [aria-invalid="true"] {
+  border-color: #bc3b4e;
+}
+.df-error {
+  margin: 6px 0 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #ae3043;
+}
+.df-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 49px;
+  margin-top: 24px;
+  padding: 13px 18px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: #465bea;
+  box-shadow: 0 3px 8px #465bea24;
+  color: #fff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.5;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.df-submit:hover {
+  background: #354ad7;
+  box-shadow: 0 5px 16px #465bea32;
+  transform: translateY(-1px);
+}
+.df-submit:active {
+  transform: translateY(0);
+}
+.df-submit:focus-visible {
+  outline: 3px solid #7d8cf0;
+  outline-offset: 4px;
+}
+.df-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin: 13px 2px 0;
+  color: #737e94;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.df-disclaimer svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.df-confirmation {
+  display: flex;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.df-success-icon {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 26px;
+  border: 1px solid #d8e4db;
+  border-radius: 18px;
+  background: #eff9f2;
+  color: #28774b;
+}
+.df-eyebrow {
+  margin-bottom: 11px;
+  color: #6573a4;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+.df-confirmation h3 {
+  margin: 0 0 16px;
+  font-size: 27px;
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -0.8px;
+}
+.df-confirmation h3:focus {
+  outline: none;
+}
+.df-confirmation > p {
+  margin: 0;
+  color: #68738a;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.df-simulation-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 17px;
+  border: 1px solid #dfe5f5;
+  border-radius: 12px;
+  background: #f5f7fe;
+}
+.df-simulation-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #465bea;
+}
+.df-simulation-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #5e6a88;
+}
+.df-simulation-note strong {
+  color: #26355c;
+}
+
+@media (max-width: 550px) {
+  .df-card {
+    padding: 23px;
+    border-radius: 17px;
+  }
+  .df-fields {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .df-field input,
+  .df-field select,
+  .df-field textarea {
+    font-size: 16px;
+  }
+  .df-form-heading h3 {
+    font-size: 21px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .df-submit,
+  .df-field input,
+  .df-field select,
+  .df-field textarea {
+    transition: none;
+  }
+  .df-submit:hover {
+    transform: none;
+  }
+}
